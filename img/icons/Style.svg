@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Style</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-32">
+            <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+            <polyline id="Path" stroke="#161616" stroke-linejoin="round" points="2.12125 12.1975 2.12125 2.12125 7.80166667 2.12125 7.80166667 12.1975"></polyline>
+            <path d="M2.12112917,7.2505 L7.80185,7.2505" id="Path" stroke="#161616" stroke-linejoin="round"></path>
+            <polyline id="Path" stroke="#161616" stroke-linejoin="round" points="7.80166667 8.17375 13.2441667 2.73125 17.26125 6.74833333 11.81125 12.1983333"></polyline>
+            <path d="M9.61720417,6.3584125 L13.6340792,10.3752917" id="Path" stroke="#161616" fill="#161616" fill-rule="nonzero" stroke-linejoin="round"></path>
+            <rect id="Rectangle" stroke="#161616" stroke-linejoin="round" x="2.12112917" y="12.19815" width="15.7577375" height="5.68072083"></rect>
+            <path d="M7.25765,12.19815 L7.25765,17.8788708" id="Path" stroke="#161616" stroke-linejoin="round"></path>
+            <path d="M12.7495,12.19815 L12.7495,17.8788708" id="Path" stroke="#161616" stroke-linejoin="round"></path>
+            <circle id="Oval" fill="#161616" fill-rule="nonzero" cx="4.68769583" cy="15.0385083" r="1"></circle>
+        </g>
+    </g>
+</svg>

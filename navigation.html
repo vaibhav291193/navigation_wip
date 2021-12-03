@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Design System - Navigation</title>
+</head>
+
+<body>
+    <div id="ds-page-container" class="ds-page-container">
+        <div id="overlay" onclick="overLayOff()"></div>
+        <div class="mobile-menu">
+            <div class="col1">
+                <span hidden id="menu-label">Main menu</span>
+                <button class="by-keyboard" id="menu-toggle" aria-labelledby="menu-label" aria-expanded="false" onclick="openMenu()">
+                    <img role="button" alt="menu" src="img/icons/hamburger-icon.svg">
+                </button>
+            </div>
+            <div class="col2">
+                <a href="#"><img alt="logo" src="img/icons/mercury-en.png"></a>
+            </div>
+        </div>
+        <div role="navigation" id="container-left" class="container-left" aria-labelledby="menu-label">
+            <div class="container-left-inner-logo">
+                <a href="#"><img alt="logo" src="img/icons/mercury-en.png"></a>
+            </div>
+            <div class="container-left-inner">
+                <div class="scrollbar-macosx">
+                    <div class="ds-accordions__container">
+                        <div class="ds-accordion" id="accordion-1">
+                            <button class="ds-accordion__button by-keyboard" id="accordion-button-id-1" aria-controls="accordion-content-1" aria-expanded="false" data-toggle="collapse">
+                                <span class="btnIcon icon-principles"></span>
+                                <span class="heading" role="heading" step="2">Overview</span>
+                                <span class="accordion__button-icon--open"></span>
+                            </button>
+                            <div role="region" class="ds-accordion__content" id="accordion-content-1" aria-labelledby="accordion-button-id-1" aria-hidden="true" data-toggle="expander-content">
+                                <div class="ds-links-container">
+                                    <a class=" by-keyboard" href="#">Accessibility</a>
+                                    <a href="#" class="active by-keyboard" aria-current="page">Grids</a>
+                                    <a class=" by-keyboard" href="#">Optimizing for search</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-accordion" id="accordion-2">
+                            <button class="ds-accordion__button by-keyboard" id="accordion-button-id-2" aria-controls="accordion-content-2" aria-expanded="false" data-toggle="collapse">
+                                <span class="btnIcon icon-style"></span>
+                                <span class="heading" role="heading" step="2">Style</span>
+                                <span class="accordion__button-icon--open"></span>
+                            </button>
+                            <div role="region" class="ds-accordion__content" id="accordion-content-2" aria-labelledby="accordion-button-id-2" aria-hidden="true" data-toggle="expander-content">
+                                <div class="ds-links-container">
+                                    <a class=" by-keyboard" href="#">Style</a>
+                                    <a class=" by-keyboard" href="#">Color</a>
+                                    <a class=" by-keyboard" href="#">Iconography</a>
+                                    <a class=" by-keyboard" href="#">Style</a>
+                                    <a class=" by-keyboard" href="#">Color</a>
+                                    <a class=" by-keyboard" href="#">Iconography</a>
+                                    <a class=" by-keyboard" href="#">Style</a>
+                                    <a class=" by-keyboard" href="#">Color</a>
+                                    <a class=" by-keyboard" href="#">Iconography</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-accordion" id="accordion-3">
+                            <button class="ds-accordion__button by-keyboard" id="accordion-button-id-3" aria-controls="accordion-content-3" aria-expanded="false" data-toggle="collapse">
+                                <span class="btnIcon icon-components"></span>
+                                <span class="heading" role="heading" step="2">Components</span>
+                                <span class="accordion__button-icon--open"></span>
+                            </button>
+                            <div role="region" class="ds-accordion__content" id="accordion-content-3" aria-labelledby="accordion-button-id-3" aria-hidden="true" data-toggle="expander-content">
+                                <div class="ds-links-container">
+                                    <a class=" by-keyboard" href="#">Buttons</a>
+                                    <a class=" by-keyboard" href="#">Modals</a>
+                                    <a class=" by-keyboard" href="#">Checkboxes</a>
+                                    <a class=" by-keyboard" href="#">Links</a>
+                                    <a class=" by-keyboard" href="#">Buttons</a>
+                                    <a class=" by-keyboard" href="#">Modals</a>
+                                    <a class=" by-keyboard" href="#">Checkboxes</a>
+                                    <a class=" by-keyboard" href="#">Links</a>
+                                    <a class=" by-keyboard" href="#">Buttons</a>
+                                    <a class=" by-keyboard" href="#">Modals</a>
+                                    <a class=" by-keyboard" href="#">Checkboxes</a>
+                                    <a class=" by-keyboard" href="#">Links</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ds-accordion" id="accordion-4">
+                            <button class="ds-accordion__button by-keyboard" id="accordion-button-id-4" aria-controls="accordion-content-4" aria-expanded="false" data-toggle="collapse">
+                                <span class="btnIcon icon-resources"></span>
+                                <span class="heading" role="heading" step="2">Resources</span>
+                                <span class="accordion__button-icon--open"></span>
+                            </button>
+                            <div role="region" class="ds-accordion__content" id="accordion-content-4" aria-labelledby="accordion-button-id-4" aria-hidden="true" data-toggle="expander-content">
+                                <p></p>
+                            </div>
+                        </div>
+                        <a href="#" hidden>Insider 4 - NOT tabbable</a>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <div class="container-right">
+            <div class="container-right-inner">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/navigation-script.js"></script>
+<script src="js/accordions-script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+<script>
+$(document).ready(function(){
+    var h = $(window).height() - 135;
+    $('.scrollbar-macosx').scrollbar();
+    $(".scrollbar-macosx").css({ "maxHeight": `${h}px` });
+    $(".container-left-inner").height(h);    
+});
+function openMenu() {
+    $("#ds-page-container").addClass("opened");
+    $("#menu-toggle").attr("aria-expanded","true");
+    $(".container-right").attr("aria-hidden", "true");
+    $(".mobile-menu").attr("aria-hidden", "true");
+    findInsiders($('.container-left'));
+}
+function overLayOff() {
+    $("#ds-page-container").removeClass("opened");
+    $("#menu-toggle").attr("aria-expanded","false");
+    $(".container-right").attr("aria-hidden", "false");
+    $(".mobile-menu").attr("aria-hidden", "false");
+}
+
+$(document).keyup(function (e) {
+    if (e.keyCode == 27) { // escape key maps to keycode `27`
+        if($('#ds-page-container')){
+            overLayOff();
+        }
+    }
+});
+
+function findInsiders(elem) {
+    var tabbable = elem.find('select, input, textarea, button, a').filter(':visible');
+    
+    var firstTabbable = tabbable.first();
+    var lastTabbable = tabbable.last();
+    /*set focus on first input*/
+    firstTabbable.focus();
+
+    /*redirect last tab to first input*/
+    lastTabbable.on('keydown', function (e) {
+       if ((e.which === 9 && !e.shiftKey)) {
+           e.preventDefault();
+           firstTabbable.focus();
+       }
+    });
+
+    /*redirect first shift+tab to last input*/
+    firstTabbable.on('keydown', function (e) {
+        if ((e.which === 9 && e.shiftKey)) {
+            e.preventDefault();
+            lastTabbable.focus();
+        }
+    });
+    
+    /* allow escape key to close insiders div */
+    elem.on('keyup', function(e){
+      if (e.keyCode === 27 ) {
+        elem.hide();
+      };
+    });
+}
+
+
+/* $(document).ready(function() {
+  var findInsiders = function(elem) {
+
+    console.log(elem)
+    
+    var tabbable = elem.find('select, input, textarea, button, a').filter(':visible');
+    
+    var firstTabbable = tabbable.first();
+    var lastTabbable = tabbable.last();
+    // set focus on first input
+    firstTabbable.focus();
+
+    // redirect last tab to first input
+    lastTabbable.on('keydown', function (e) {
+       if ((e.which === 9 && !e.shiftKey)) {
+           e.preventDefault();
+           firstTabbable.focus();
+       }
+    });
+
+    // redirect first shift+tab to last input
+    firstTabbable.on('keydown', function (e) {
+        if ((e.which === 9 && e.shiftKey)) {
+            e.preventDefault();
+            lastTabbable.focus();
+        }
+    });
+    
+    // allow escape key to close insiders div
+    elem.on('keyup', function(e){
+      if (e.keyCode === 27 ) {
+        elem.hide();
+      };
+    });
+  };
+  
+  
+    $('.show-insiders').click(function(e){
+    e.preventDefault();
+    
+    $('.insiders').show();
+    findInsiders($('.container-left'));
+  });
+  
+  $('.hide-insiders').click(function(e){
+    console.log("klikk");
+    e.preventDefault();
+    
+    $('.insiders').hide();
+  });
+  
+  
+}); */
+
+
+</script>
+</html>

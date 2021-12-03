@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Components</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Components" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Mercury_Patterns">
+            <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+            <g id="Group" transform="translate(1.176471, 3.529412)">
+                <ellipse id="Oval" fill="#161616" fill-rule="nonzero" cx="2.909012" cy="2.10942976" rx="1" ry="1"></ellipse>
+                <ellipse id="Oval" fill="#161616" fill-rule="nonzero" cx="5.06651819" cy="2.10942976" rx="1" ry="1"></ellipse>
+                <rect id="Rectangle" stroke="#161616" stroke-linejoin="round" x="0.00356366099" y="0.126593772" width="17.0594321" height="13.8644595"></rect>
+                <path d="M0.00356366099,4.11986159 L17.0629998,4.11986159" id="Path" stroke="#161616" stroke-linejoin="round"></path>
+                <path d="M10.5873239,6.72417301 L14.5264412,6.72417301" id="Path" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10.5873239,8.74583668 L13.0826871,8.74583668" id="Path" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"></path>
+                <rect id="Rectangle" stroke="#161616" stroke-linejoin="round" x="2.5492082" y="6.72417301" width="5.44503425" height="4.66456194"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

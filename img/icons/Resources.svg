@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.1 (72631) - https://sketchapp.com -->
+    <title>Resources</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Resources" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-12">
+            <rect id="Rectangle" x="0" y="0" width="20" height="20"></rect>
+            <polyline id="Path" stroke="#161616" stroke-linejoin="round" points="17.16375 5.31833333 17.16375 18.74875 2.83625 18.74875 2.83625 1.25125 13.09625 1.25125"></polyline>
+            <polygon id="Path" stroke="#161616" stroke-linejoin="round" points="17.16375 5.31833333 13.0966667 5.31833333 13.0966667 1.25125"></polygon>
+            <path d="M10,12.3809833 L10,5.7992375" id="Path" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"></path>
+            <polyline id="Path" stroke="#161616" stroke-linecap="round" stroke-linejoin="round" points="12.7125 10 10.10625 12.60625 7.5 10"></polyline>
+            <path d="M7.50050833,14.4261792 L12.7119917,14.4261792" id="Path" stroke="#161616" stroke-linecap="round" stroke-linejoin="round"></path>
+        </g>
+    </g>
+</svg>

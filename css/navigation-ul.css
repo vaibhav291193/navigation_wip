@@ -1,0 +1,505 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body{
+  margin: 0;
+  padding: 0;
+  font-family: Roboto;
+}
+/* Button Class */
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* 
+Do not delete the following comment. It is essential for tracking purposes.
+#Merc2021DoNotDelete 
+*/
+body{
+  background-color: #fff;
+}
+
+/* Main parent container */
+
+.ds-page-container{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  /* border: 1px solid #d7d7d7; */
+}
+
+.container-left {
+  flex: 1;
+  background-color: #fafafa;
+  border-right: 1px solid #d7d7d7;
+  max-width: 271px;
+  width: 100%;
+
+  position: fixed;
+}
+
+.container-left-inner{
+  margin-top: 28px;
+  overflow-y: auto;
+
+  mix-blend-mode: multiply !important;
+}
+
+.container-left-inner-logo{
+  height: 112px;
+  border-bottom: 1px solid #d7d7d7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container-left-inner-logo img{
+  padding: 40px 65px;
+}
+
+.container-right {
+  flex: 1;
+  background-color: #fff;
+  max-width: 1440px;
+  width: 100%;
+}
+
+.container-right-inner{
+  /* left container width is 271 + 96 = 367px */
+  padding: 100px 96px 100px 367px;
+}
+
+/* END Main parent container */
+
+
+
+.icon {
+  width: 16px;
+  height: 16px;
+  right: 16px;
+  position: absolute;
+  top: 20px;
+}
+
+.btnIcon{
+  width:20px;
+  height:20px;
+  background-repeat: no-repeat;
+  position: absolute;
+  /* top: 20px; */
+}
+
+.icon-principles{
+  background:url("../img/icons/Principles.svg");
+}
+.icon-style{
+  background:url("../img/icons/Style.svg");
+}
+.icon-components{
+  background:url("../img/icons/Components.svg");
+}
+.icon-resources{
+  background:url("../img/icons/Resources.svg");
+}
+
+.heading {
+  font-family: Roboto;
+  font-size: 1rem;
+  font-weight: 400;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  color: #161616;
+  margin: 0;
+  padding: 0;
+  margin-left: 36px;
+}
+
+/* ****************************************************************
+    MENU CSS 
+**************************************************************** */
+.nav{
+    margin-top: 4px;
+    margin-bottom: 4px;
+}
+
+.nav ul li button{
+    background-color: unset;
+    border: unset;
+}
+
+ol, ul { 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a { text-decoration: none; }
+
+ul li {
+	position: relative;
+}
+li ul {
+	position: relative;
+	display:none;
+}
+/* Styles for Menu Items */
+ul li a {
+    display:block;
+    text-decoration: none;
+    padding: 16px 0px 16px 28px;
+    max-width: 260px;
+    margin: 0 auto;
+}
+
+li a:hover {
+   background-color: #eee;
+}
+
+
+a:hover,
+a:focus,
+.ds-links-container a:focus {
+  box-shadow: 0 0 0 2px #fafafa, 0 0 0 4px #0467c6;
+  text-decoration: none;
+  outline: none;  
+  z-index: 1;
+  position: relative;
+  border-radius: 2px;
+}
+
+a.by-keyboard:focus,
+.ds-links-container a.by-keyboard:focus {
+  box-shadow: 0 0 0 0px #fafafa, 0 0 0 0px #0467c6 !important;
+}
+
+.ds-links-container{
+  margin-top: 8px;
+  margin-left: 32px;
+  margin-bottom: 4px;
+}
+
+.ds-links-container a {
+  border-left: 2px solid #dadada;
+
+  font-family: Roboto;
+  font-size: 0.938rem;
+  font-weight: 300;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 0.5px;
+  color: #111;
+  display: block;
+  
+  padding: 8px 0 8px 16px;
+  text-decoration: none;
+  width: 228px;
+}
+.ds-links-container a:hover {
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.ds-links-container a.active {
+  border-left: 2px solid #ca261a;
+  color: #ca261a;
+  font-weight: 500;
+} 
+
+li.on ul { display:block  } /* The magic */
+li.off ul{display:none}
+
+.accordion__button-icon--open{
+  width:16px;
+  height:16px;
+  background:url("../img/icons/chevron-down.svg");
+  transition:0.3s;
+  background-repeat: no-repeat;
+
+  right: 18px;
+  position: absolute;
+  /* top: 20px; */
+}
+li.on .accordion__button-icon--open {
+    -o-transform:rotate(180deg);
+    -ms-transform:rotate(180deg);
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+}
+
+/**
+ * Rotating chevron icon
+ */
+/* 
+label > span {
+  float: right;
+  -webkit-transition: -webkit-transform .65s ease;
+  transition: transform .65s ease;
+}
+
+.nav__list input[type=checkbox]:checked + label > span {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+ */
+/* ****************************************************************
+    END MENU CSS 
+**************************************************************** */
+
+
+
+
+
+/* Scroll effect */
+.container-left-inner {
+    max-width: 271px;
+}
+
+.container-left-inner > div {
+    max-height: 1000px;
+    overflow: auto;
+}
+/*************** SCROLLBAR BASE CSS ***************/
+
+.scroll-wrapper {
+    overflow: hidden !important;
+    padding: 0 !important;
+    position: relative;
+}
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow: scroll !important;
+    padding: 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.scroll-wrapper > .scroll-content::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+.scroll-element {
+    display: none;
+}
+.scroll-element, .scroll-element div {
+    box-sizing: content-box;
+}
+
+.scroll-element.scroll-x.scroll-scrollx_visible,
+.scroll-element.scroll-y.scroll-scrolly_visible {
+    display: block;
+}
+
+.scroll-element .scroll-bar,
+.scroll-element .scroll-arrow {
+    cursor: default;
+}
+
+.scroll-textarea {
+    border: 1px solid #cccccc;
+    border-top-color: #999999;
+}
+.scroll-textarea > .scroll-content {
+    overflow: hidden !important;
+}
+.scroll-textarea > .scroll-content > textarea {
+    border: none !important;
+    box-sizing: border-box;
+    height: 100% !important;
+    margin: 0;
+    max-height: none !important;
+    max-width: none !important;
+    overflow: scroll !important;
+    outline: none;
+    padding: 2px;
+    position: relative !important;
+    top: 0;
+    width: 100% !important;
+}
+.scroll-textarea > .scroll-content > textarea::-webkit-scrollbar {
+    height: 0;
+    width: 0;
+}
+
+
+/*************** SCROLLBAR MAC OS X ***************/
+
+.scrollbar-macosx > .scroll-element,
+.scrollbar-macosx > .scroll-element div
+{
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.scrollbar-macosx > .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.scrollbar-macosx > .scroll-element .scroll-element_track { display: none; }
+.scrollbar-macosx > .scroll-element .scroll-bar {
+    background-color: #6C6E71;
+    display: block;
+
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    border-radius: 7px;
+
+    -webkit-transition: opacity 0.2s linear;
+    -moz-transition: opacity 0.2s linear;
+    -o-transition: opacity 0.2s linear;
+    -ms-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+.scrollbar-macosx:hover > .scroll-element .scroll-bar,
+.scrollbar-macosx > .scroll-element.scroll-draggable .scroll-bar {
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+
+.scrollbar-macosx > .scroll-element.scroll-x {
+    bottom: 0px;
+    height: 0px;
+    left: 0;
+    min-width: 100%;
+    overflow: visible;
+    width: 100%;
+}
+
+.scrollbar-macosx > .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0px;
+    top: 0;
+    width: 0px;
+}
+
+/* scrollbar height/width & offset from container borders */
+.scrollbar-macosx > .scroll-element.scroll-x .scroll-bar { height: 7px; min-width: 10px; top: -9px; }
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-bar { left: -11px; min-height: 10px; width: 6px; }
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-bar:hover { left: -13px; min-height: 10px; width: 8px; }
+
+.scrollbar-macosx > .scroll-element.scroll-x .scroll-element_outer { left: 2px; }
+.scrollbar-macosx > .scroll-element.scroll-x .scroll-element_size { left: -4px; }
+
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-element_outer { top: 2px; }
+.scrollbar-macosx > .scroll-element.scroll-y .scroll-element_size { top: -4px; }
+
+/* update scrollbar offset if both scrolls are visible */
+.scrollbar-macosx > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size { left: -11px; }
+.scrollbar-macosx > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size { top: -11px; }
+
+
+/* @media only screen  and (max-width : 1024px) {
+  .container-left{
+    background-color: red;
+    left: -268px;
+  }
+} */
+
+/* @media only screen  and (min-width : 641px) and (max-width: 1024) {
+  .container-right{
+    background-color: red;
+  }
+} */
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1,1,1,0.75);
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* Menu Toggle */
+.mobile-menu{
+  display: none;
+}
+@media only screen  and (max-width : 1024px) {
+  .ds-page-container{
+    display: block;
+  }
+  .mobile-menu{
+    height: 73px;
+    display: flex;
+    width: 100%;
+    padding: 24px;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  .mobile-menu button{
+    background-color: unset;
+    border: unset;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .col1, .col2{
+    order: 1;
+  }
+  .col2{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex: 1;
+  }
+
+  .container-left
+  {
+    top: 0;
+    -webkit-font-smoothing: antialiased;
+    /* to stop flickering of text in safari */
+    transform-origin: 0% 0%;
+    transform: translate(-100%, 0);    
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+  }
+  
+  .ds-page-container.opened .container-left {
+    transform: none;
+    z-index: 2;
+  }
+
+  .container-right-inner{
+    padding: 64px 24px;
+  }
+
+  .ds-page-container.opened #overlay{
+    display: block;
+  }
+  .ds-page-container #overlay{
+    display: none;
+  }
+}

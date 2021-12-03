@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/navigation.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Design System - Navigation</title>
+</head>
+
+<body>
+    <div id="ds-page-container" class="ds-page-container">
+        <div id="overlay" onclick="overLayOff()"></div>
+        <nav>
+            <div class="mobile-menu">
+                <div class="col1">
+                    <span hidden id="menu-label">Main menu</span>
+                    <button class="by-keyboard" id="menu-toggle" aria-labelledby="menu-label" aria-expanded="false" onclick="openMenu()">
+                        <img role="button" alt="menu" src="img/icons/hamburger-icon.svg">
+                    </button>
+                </div>
+                <div class="col2">
+                    <a href="#"><img alt="logo" src="img/icons/Mercury_EN.svg"></a>
+                </div>
+            </div>
+            <div id="container-left" class="container-left" aria-labelledby="menu-label">
+                <div class="container-left-inner-logo">
+                    <a href="#"><img alt="logo" src="img/icons/Mercury_EN.svg"></a>
+                </div>
+                <div class="container-left-inner">
+                    <div class="scrollbar-macosx">
+                        <div class="ds-accordions__container">
+                            <ul role="list">
+                                <li class="ds-accordion" id="accordion-1">
+                                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-1" aria-controls="accordion-content-1" aria-expanded="false" data-toggle="collapse">
+                                        <span class="btnIcon icon-principles"></span>
+                                        <span class="heading">Overview</span>
+                                        <span class="accordion__button-icon--open"></span>
+                                    </button>
+                                    <div class="ds-links-container">
+                                        <ul role="list" class="ds-accordion__content" id="accordion-content-1" aria-labelledby="accordion-button-id-1" aria-hidden="true" data-toggle="expander-content">
+                                            
+                                            <li><a class=" by-keyboard" href="#">Accessibility</a></li>
+                                            <li><a href="#" class="active by-keyboard" aria-current="page">Grids</a></li>
+                                            <li><a class=" by-keyboard" href="#">Optimizing for search</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ds-accordion" id="accordion-2">
+                                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-2" aria-controls="accordion-content-2" aria-expanded="false" data-toggle="collapse">
+                                        <span class="btnIcon icon-style"></span>
+                                        <span class="heading">Style</span>
+                                        <span class="accordion__button-icon--open"></span>
+                                    </button>
+                                    <div class="ds-links-container">
+                                        <ul role="list" class="ds-accordion__content" id="accordion-content-2" aria-labelledby="accordion-button-id-2" aria-hidden="true" data-toggle="expander-content">
+                                        
+                                            <li><a class=" by-keyboard" href="#">Style</a></li>
+                                            <li><a class=" by-keyboard" href="#">Color</a></li>
+                                            <li><a class=" by-keyboard" href="#">Iconography</a></li>
+                                            <li><a class=" by-keyboard" href="#">Style</a></li>
+                                            <li><a class=" by-keyboard" href="#">Color</a></li>
+                                            <li><a class=" by-keyboard" href="#">Iconography</a></li>
+                                            <li><a class=" by-keyboard" href="#">Style</a></li>
+                                            <li><a class=" by-keyboard" href="#">Color</a></li>
+                                            <li><a class=" by-keyboard" href="#">Iconography</a></li>
+                                            
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ds-accordion" id="accordion-3">
+                                    <button class="ds-accordion__button by-keyboard" id="accordion-button-id-3" aria-controls="accordion-content-3" aria-expanded="false" data-toggle="collapse">
+                                        <span class="btnIcon icon-components"></span>
+                                        <span class="heading">Components</span>
+                                        <span class="accordion__button-icon--open"></span>
+                                    </button>
+                                    <div class="ds-links-container">
+                                        <ul role="list" class="ds-accordion__content" id="accordion-content-3" aria-labelledby="accordion-button-id-3" aria-hidden="true" data-toggle="expander-content">
+                                            <li><a class=" by-keyboard" href="#">Style</a></li>
+                                            <li><a class=" by-keyboard" href="#">Color</a></li>
+                                            <li><a class=" by-keyboard" href="#">Iconography</a></li>
+                                            <li><a class=" by-keyboard" href="#">Style</a></li>
+                                            <li><a class=" by-keyboard" href="#">Color</a></li>
+                                            <li><a class=" by-keyboard" href="#">Iconography</a></li>
+                                            <li><a class=" by-keyboard" href="#">Style</a></li>
+                                            <li><a class=" by-keyboard" href="#">Color</a></li>
+                                            <li><a class=" by-keyboard" href="#">Iconography</a></li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="ds-accordion">
+                                    <a href="" class="ds-accordion__button by-keyboard" id="accordion-button-id-4">
+                                        <span class="btnIcon icon-resources"></span>
+                                        <span class="heading">Resources</span>
+                                    </a>
+                                </li>
+                                <a href="#" hidden>Insider 4 - NOT tabbable</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>            
+            </div>
+        </nav>
+        <div class="container-right">
+            <div class="container-right-inner">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.<a href="#">Lorem ipsum dolor</a> sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita i<a href="#">Lorem ipsum dolor</a>psum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.
+            </div>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script
+  src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"
+  integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="
+  crossorigin="anonymous"></script>
+<script src="js/jquery.scrollbar.js"></script>
+<script src="js/navigation-script.js"></script>
+</html>

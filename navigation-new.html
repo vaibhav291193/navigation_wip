@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/navigation-new.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Design System - Navigation</title>
+</head>
+
+<body>
+    <div id="ds-page-container" class="ds-page-container">
+        <div id="overlay" onclick="overLayOff()"></div>
+        <div class="mobile-menu">
+            <div class="col1">
+                <span hidden id="menu-label">Main menu</span>
+                <button class="by-keyboard" id="menu-toggle" aria-labelledby="menu-label" aria-expanded="false" onclick="openMenu()">
+                    <img role="button" alt="menu" src="img/icons/hamburger-icon.svg">
+                </button>
+            </div>
+            <div class="col2">
+                <a href="#"><img alt="logo" src="img/icons/mercury-en.png"></a>
+            </div>
+        </div>
+        <div id="container-left" class="container-left">
+            <div class="container-left-inner-logo">
+                <a href="#"><img alt="logo" src="img/icons/mercury-en.png"></a>
+            </div>
+            <div class="container-left-inner">
+                <div class="scrollbar-macosx">
+                    <nav class="nav" role="navigation">
+                        <ul class="nav__list">
+                            <li>
+                                <input class="mcheckbox" id="group-1" type="checkbox" />
+                                <label for="group-1">
+                                    <span class="btnIcon icon-principles"></span>
+                                    <span class="heading">Overview</span>
+                                    <span class="accordion__button-icon--open"></span>
+                                </label>
+                                <ul aria-expanded="false" class="group-list ds-links-container">
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a class="active" href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input class="mcheckbox" id="group-2" type="checkbox" />
+                                <label for="group-2">
+                                    <span class="btnIcon icon-style"></span>
+                                    <span class="heading">Style</span>
+                                    <span class="accordion__button-icon--open"></span>
+                                </label>
+                                <ul aria-expanded="false" class="group-list ds-links-container">
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <input class="mcheckbox" id="group-3" type="checkbox" />
+                                <label for="group-3">
+                                    <span class="btnIcon icon-components"></span>
+                                    <span class="heading">Components</span>
+                                    <span class="accordion__button-icon--open"></span>
+                                </label>
+                                <ul aria-expanded="false" class="group-list ds-links-container">
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>       
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li> 
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>       
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li>
+                                    <li><a href="#">1st level item</a></li> 
+                                </ul>
+                            </li>
+                            <li>
+                                <input class="mcheckbox" id="group-4" type="checkbox" />
+                                <label for="group-4">
+                                    <span class="btnIcon icon-resources"></span>
+                                    <span class="heading">Resources</span>
+                                    <span class="accordion__button-icon--open"></span>
+                                </label>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>            
+        </div>
+        <div class="container-right">
+            <div class="container-right-inner">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad omnis quae expedita ipsum nobis praesentium velit animi minus amet perspiciatis laboriosam similique debitis iste ratione nemo ea at corporis aliquam.
+            </div>
+        </div>
+    </div>
+    
+</body>
+<script src="js/navigation-script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/jquery.scrollbar.js"></script>
+</html>
