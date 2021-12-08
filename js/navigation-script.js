@@ -2,6 +2,7 @@
 Do not delete the following comment. It is essential for tracking purposes.
 #Merc2021DoNotDelete
 */
+/* Show scrollbar when scroll */
 $(document).ready(function () {
     var h = $(window).height() - 135;
     $('.scrollbar-macosx').scrollbar();
@@ -10,14 +11,36 @@ $(document).ready(function () {
 
     if (window.matchMedia("(max-width: 1024px)").matches) {
         overLayOff();
+        $('.container-left').show();
     }
+
+    $(window).resize(function () {
+        if (window.matchMedia("(min-width: 1024px)").matches) {
+            $('.container-left').show();
+        }
+    });
+
+    $('.scrollbar-macosx').scroll(function () {
+        clearTimeout($.data(this, 'scrollTimer'));
+        sval = $('.scroll-element.scroll-y .scroll-bar').css('top').replace('px', '');
+        if (sval >= 0) {
+            $(".scroll-element.scroll-y .scroll-bar").addClass("scroll-bar-scrolls");
+        }
+        $.data(this, 'scrollTimer', setTimeout(function () {
+            // "Haven't scrolled in 250ms!"
+            $(".scroll-element.scroll-y .scroll-bar").removeClass("scroll-bar-scrolls");
+        }, 250));
+    });
 });
+
+
 function openMenu() {
     $("#ds-page-container").addClass("opened");
     $("#menu-toggle").attr("aria-expanded", "true");
     $(".container-right").attr("aria-hidden", "true");
     $(".mobile-menu").attr("aria-hidden", "true");
     $('#container-left').show('slide', { direction: 'left' }, 200);
+    $('#closeBtn').show();
     findInsiders($('.container-left'));
     $(document).keyup(function (e) {
         if (e.keyCode == 27) { // escape key maps to keycode `27`
